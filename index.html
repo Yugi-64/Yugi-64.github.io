@@ -1,181 +1,11 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patrick Sulja - CV</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Courier New', 'Monaco', 'Menlo', monospace;
-            background-color: #0d1117;
-            color: #58a6ff;
-            padding: 20px;
-            line-height: 1.6;
-            font-size: 14px;
-        }
-
-        .terminal {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #161b22;
-            border: 2px solid #30363d;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-        }
-
-        .terminal-header {
-            border-bottom: 1px solid #30363d;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-        }
-
-        .terminal-buttons {
-            display: flex;
-            gap: 8px;
-            margin-right: 15px;
-        }
-
-        .btn {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-        }
-
-        .btn-close { background-color: #ff5f57; }
-        .btn-min { background-color: #ffbd2e; }
-        .btn-max { background-color: #28ca42; }
-
-        .terminal-title {
-            color: #f0f6fc;
-            font-weight: bold;
-        }
-
-        .prompt {
-            color: #7c3aed;
-            font-weight: bold;
-        }
-
-        .command {
-            color: #58a6ff;
-        }
-
-        .output {
-            color: #f0f6fc;
-            margin-left: 0;
-        }
-
-        .section {
-            margin: 20px 0;
-        }
-
-        .section-title {
-            color: #f85149;
-            font-weight: bold;
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
-
-        .section-title::before {
-            content: "├── ";
-            color: #7c3aed;
-        }
-
-        .name {
-            color: #7ee787;
-            font-size: 24px;
-            font-weight: bold;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .contact-info {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .contact-info div {
-            margin: 5px 0;
-        }
-
-        .email { color: #58a6ff; }
-        .phone { color: #f85149; }
-        .location { color: #ffa657; }
-
-        .entry {
-            margin: 15px 0;
-            padding-left: 20px;
-        }
-
-        .entry-title {
-            color: #7ee787;
-            font-weight: bold;
-        }
-
-        .entry-company {
-            color: #58a6ff;
-            font-style: italic;
-        }
-
-        .entry-date {
-            color: #ffa657;
-            font-size: 12px;
-        }
-
-        .entry-description {
-            color: #f0f6fc;
-            margin-top: 5px;
-            font-size: 13px;
-        }
-
-        .language {
-            padding-left: 20px;
-            margin: 8px 0;
-        }
-
-        .language-name {
-            color: #7ee787;
-            font-weight: bold;
-        }
-
-        .language-level {
-            color: #58a6ff;
-        }
-
-        .tree-line {
-            color: #7c3aed;
-        }
-
-        a {
-            transition: all 0.3s ease;
-        }
-
-        a:hover {
-            text-decoration: underline !important;
-            filter: brightness(1.3);
-        }
-            body {
-                padding: 10px;
-                font-size: 12px;
-            }
-            
-            .terminal {
-                padding: 15px;
-            }
-            
-            .name {
-                font-size: 20px;
-            }
-        }
-    </style>
+    <title>Yugi-64</title>
+    <link rel="icon" type="image/x-icon" href="static/favicon.ico">
+    <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
     <div class="terminal">
@@ -185,123 +15,25 @@
                 <div class="btn btn-min"></div>
                 <div class="btn btn-max"></div>
             </div>
-            <div class="terminal-title">patrick@curriculum-vitae:~$</div>
+            <div class="terminal-title">yugi-64@terminal:~$</div>
         </div>
-
-        <div class="name">PATRICK SULJA</div>
         
-        <div class="contact-info">
-            <div class="location">📍 Hamburg, HH 21037</div>
-            <div class="email">📧 patricksulja@icloud.com</div>
-            <div class="phone">📱 +49 176 61178682</div>
-            <div style="margin-top: 15px;">
-                <a href="https://www.linkedin.com/in/patricksulja/" target="_blank" style="color: #58a6ff; text-decoration: none; margin: 0 10px;">🔗 LinkedIn</a>
-                <a href="https://github.com/Yugi-64" target="_blank" style="color: #7ee787; text-decoration: none; margin: 0 10px;">🐙 GitHub</a>
-                <a href="https://huggingface.co/Yugi64" target="_blank" style="color: #ffa657; text-decoration: none; margin: 0 10px;">🤗 HuggingFace</a>
-                <a href="http://yugi64.me" target="_blank" style="color: #f85149; text-decoration: none; margin: 0 10px;">🏠 Homepage</a>
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="section-title">BERUFSERFAHRUNG</div>
-            <div class="entry">
-                <div class="tree-line">│</div>
-                <div class="tree-line">└── </div>
-                <div class="entry-title">Projekthelfer (Aushilfe)</div>
-                <div class="entry-company">@ Harburg Marketing - Hamburg</div>
-                <div class="entry-date">[August 2022 - Heute]</div>
-                <div class="entry-description">
-                    • Unterstützung bei Bürotätigkeiten<br>
-                    • Aushilfe bei größeren Events (Konzerte, etc.)
+        <div class="terminal-content">
+            <div class="prompt">yugi-64@terminal:~$</div>
+            <div class="command">ls -la</div>
+            <div class="output">
+                <div style="margin: 10px 0;">
+                    <a href="cv/" style="color: #7ee787; text-decoration: none;">📄 curriculum-vitae/</a>
                 </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="section-title">BILDUNGSWEG</div>
-            <div class="entry">
-                <div class="tree-line">│</div>
-                <div class="tree-line">├── </div>
-                <div class="entry-title">Bachelor in Wirtschaftsinformatik</div>
-                <div class="entry-company">@ IUBH Internationale Hochschule (Erfurt) - Hamburg</div>
-                <div class="entry-date">[Oktober 2024 - Heute]</div>
             </div>
             
-            <div class="entry">
-                <div class="tree-line">│</div>
-                <div class="tree-line">├── </div>
-                <div class="entry-title">Bachelor in Computer Science</div>
-                <div class="entry-company">@ Technische Universität Hamburg - Hamburg</div>
-                <div class="entry-date">[Oktober 2021 - September 2023]</div>
-            </div>
-            
-            <div class="entry">
-                <div class="tree-line">│</div>
-                <div class="tree-line">└── </div>
-                <div class="entry-title">Abitur</div>
-                <div class="entry-company">@ Stadtteilschule Lohbrügge - Hamburg</div>
-                <div class="entry-date">[August 2014 - Juni 2021]</div>
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="section-title">SPRACHEN</div>
-            <div class="language">
-                <div class="tree-line">├── </div>
-                <span class="language-name">Deutsch:</span> 
-                <span class="language-level">Muttersprache</span>
-            </div>
-            <div class="language">
-                <div class="tree-line">└── </div>
-                <span class="language-name">Englisch:</span> 
-                <span class="language-level">Fließend</span>
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="section-title">TECHNISCHE FÄHIGKEITEN</div>
-            <div class="language">
-                <div class="tree-line">├── </div>
-                <span class="language-name">Programmiersprachen:</span> 
-                <span class="language-level">JavaScript (Grundlagen), Java (Grundlagen)</span>
-            </div>
-            <div class="language">
-                <div class="tree-line">├── </div>
-                <span class="language-name">Web-Technologien:</span> 
-                <span class="language-level">HTML (Grundlagen), CSS (Grundlagen)</span>
-            </div>
-            <div class="language">
-                <div class="tree-line">├── </div>
-                <span class="language-name">Versionskontrolle:</span> 
-                <span class="language-level">Git, GitHub</span>
-            </div>
-            <div class="language">
-                <div class="tree-line">└── </div>
-                <span class="language-name">Betriebssysteme:</span> 
-                <span class="language-level">Windows</span>
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="section-title">ZERTIFIKATE</div>
-            <div class="entry">
-                <div class="tree-line">│</div>
-                <div class="tree-line">└── </div>
-                <div class="entry-title">
-                    <a href="https://cas-bridge.xethub.hf.co/xet-bridge-us/67a47037749ea2c4b9fafd4b/2d5a65d50c4ec380be358caced6037d6a0f3866aa611d59027d9adeaf6710ffb?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cas%2F20250819%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250819T175933Z&X-Amz-Expires=3600&X-Amz-Signature=3942e647cd0dbf713e5555ea29a99ba4bae8e5150d787e38741b8d10d3a8798a&X-Amz-SignedHeaders=host&X-Xet-Cas-Uid=681bd199466c2f88306fffc7&response-content-disposition=inline%3B+filename*%3DUTF-8%27%272025-05-10.png%3B+filename%3D%222025-05-10.png%22%3B&response-content-type=image%2Fpng&x-id=GetObject&Expires=1755629973&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc1NTYyOTk3M319LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2FzLWJyaWRnZS54ZXRodWIuaGYuY28veGV0LWJyaWRnZS11cy82N2E0NzAzNzc0OWVhMmM0YjlmYWZkNGIvMmQ1YTY1ZDUwYzRlYzM4MGJlMzU4Y2FjZWQ2MDM3ZDZhMGYzODY2YWE2MTFkNTkwMjdkOWFkZWFmNjcxMGZmYioifV19&Signature=thWImv1vGOvlnjpCWg5cljKmjJv-gFh0fIkdBdK9J-pjuEYhEMWLdXkmXZgWbK10P2HeaLfYbcBahMsSebdctXwoERsQGTXoaPC%7EBC3R8f2WxKE6oU9vnZtmLkj7ecPoEDAQfblsCB78q6yOviMQ2Hg%7EVbXfsMAYNuSHQMLmDj-b0mmzY652LjHG7kmBcnGnI0rowLYNP8dzKcZ9wrb3rPdBZrR-l71MLbFa1Tp9L3UOnFfn5JJJEtzCuadfunwpihtJM3S4uiOGh6BvZ1MVXxGfP-usE3Rl3wCGkHzFBZnYg610Ju%7EMci0VYdPqinnrOIpQxujZZ1kz7Ugizvycsg__&Key-Pair-Id=K2L8F4GPSG1IFC" target="_blank" style="color: #7ee787; text-decoration: none;">AI Agents Fundamentals 🔗</a>
-                </div>
-                <div class="entry-company">@ Hugging Face</div>
-                <div class="entry-date">[Mai 2025]</div>
-                <div class="entry-description">
-                    Zertifikats-ID: Yugi64
-                </div>
-            </div>
-        </div>
-
-        <div style="margin-top: 30px; text-align: center; color: #7c3aed; font-size: 12px;">
-            <div>patrick@cv:~$ date</div>
-            <div style="color: #f0f6fc; margin-top: 5px;">
-                19. August 2025
+            <div class="prompt" style="margin-top: 20px;">yugi-64@terminal:~$</div>
+            <div class="command">cat welcome.txt</div>
+            <div class="output" style="margin-top: 10px;">
+                Wilkommen zu Yugi-64's terminal!<br>
+                <br>
+                Verfügbare Befehle:<br>
+                • <a href="cv/" style="color: #58a6ff; text-decoration: none;">cd cv/</a> - View my curriculum vitae<br>
             </div>
         </div>
     </div>
